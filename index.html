@@ -4,10 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Courtney Reicherter — UX Portfolio</title>
+<meta name="description" content="UX Designer & Researcher portfolio featuring end-to-end case studies in flight booking, Goodreads, and auto shop website redesign.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-<style>
+<style><style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
   --sand:#F2EDE4;--sand2:#EAE3D8;--sand3:#DDD4C5;
@@ -234,24 +235,23 @@ footer{background:var(--sand2);border-top:1px solid var(--border)}
 .footer-col ul li a{font-size:14px;color:var(--ink3);transition:color .2s}
 .footer-col ul li a:hover{color:var(--ink)}
 .footer-bottom{max-width:1200px;margin:0 auto;padding:16px 48px 32px;font-size:12px;color:var(--ink4)}
-</style>
+</style></style>
 </head>
 <body>
 
 <!-- NAV -->
 <nav>
   <div class="nav-inner">
-    <a href="#" class="nav-logo">
+    <a href="index.html" class="nav-logo">
       <div class="nav-mark">CR</div>
       Courtney Reicherter
     </a>
     <ul class="nav-links">
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#flight-study">Flight Booking</a></li>
-      <li><a href="#goodreads-study">Goodreads</a></li>
-      <li><a href="#autoshop-study">Dawson Motors</a></li>
+      <li><a href="index.html#projects">Projects</a></li>
+      <li><a href="flight-booking.html">Flight Booking</a></li>
+      <li><a href="goodreads-case-study.html">Goodreads</a></li>
+      <li><a href="dawson-motors.html">Dawson Motors</a></li>
       <li><a href="about.html">About</a></li>
-      
     </ul>
   </div>
 </nav>
@@ -311,8 +311,7 @@ footer{background:var(--sand2);border-top:1px solid var(--border)}
         <div class="stat-track"><div class="stat-fill"></div></div>
       </div>
     </div>
-  </div>
-</section>
+  </div></section>
 
 <!-- INTRO STRIP -->
 <div class="intro-strip">
@@ -322,8 +321,7 @@ footer{background:var(--sand2);border-top:1px solid var(--border)}
     <div class="intro-item"><div class="intro-num">12+</div><div class="intro-lbl">Users interviewed per project</div></div>
     <div class="intro-div"></div>
     <div class="intro-item"><div class="intro-num">Hi-Fi</div><div class="intro-lbl">From research to pixels</div></div>
-  </div>
-</div>
+  </div></div>
 
 <!-- PROJECTS -->
 <section id="projects">
@@ -332,7 +330,7 @@ footer{background:var(--sand2);border-top:1px solid var(--border)}
     <h2 class="sec-heading">Selected <em>case studies</em></h2>
     <p class="sec-sub">Three end-to-end UX projects, each grounded in research and carried through to high-fidelity prototypes.</p>
     <div class="project-grid">
-      <div class="pc" onclick="document.getElementById('flight-study').scrollIntoView({behavior:'smooth'})">
+      <div class="pc" onclick="window.location='flight-booking.html'" style="cursor:pointer">
         <div class="pc-visual">
           <div class="pcv-flight">
             <div class="pcv-route">JFK<div class="pcv-line"></div>✈<div class="pcv-line"></div>LAX</div>
@@ -348,7 +346,7 @@ footer{background:var(--sand2);border-top:1px solid var(--border)}
           <div class="pc-link">View case study →</div>
         </div>
       </div>
-      <div class="pc" onclick="document.getElementById('goodreads-study').scrollIntoView({behavior:'smooth'})">
+      <div class="pc" onclick="window.location='goodreads-case-study.html'" style="cursor:pointer">
         <div class="pc-visual">
           <div class="pcv-books">
             <div class="pcv-spine" style="width:42px;height:92px;background:linear-gradient(145deg,#7A5C40,#4A3020)"></div>
@@ -366,7 +364,7 @@ footer{background:var(--sand2);border-top:1px solid var(--border)}
           <div class="pc-link">View case study →</div>
         </div>
       </div>
-      <div class="pc" onclick="document.getElementById('autoshop-study').scrollIntoView({behavior:'smooth'})">
+      <div class="pc" onclick="window.location='dawson-motors.html'" style="cursor:pointer">
         <div class="pc-visual" style="background:linear-gradient(160deg,var(--sage-lt) 0%,var(--sand2) 60%)">
           <div style="display:flex;flex-direction:column;gap:8px;align-items:center;justify-content:center">
             <div style="font-family:var(--serif);font-size:15px;font-style:italic;color:var(--bark2)">Old-fashioned service.</div>
@@ -385,287 +383,10 @@ footer{background:var(--sand2);border-top:1px solid var(--border)}
         </div>
       </div>
     </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════
-     CASE STUDY 1: FLIGHT
-═══════════════════════════ -->
-<div class="cs-section" id="flight-study">
-  <div class="cs-head">
-    <div class="csh-left">
-      <div class="cs-num">Case Study 01</div>
-      <h2 class="cs-title">Find Your<br><em>Perfect Flight</em></h2>
-      <p class="cs-sub">I reimagined the flight booking experience to be seamless, intuitive, and delightful — a unified interface that searches hundreds of airlines and travel sites simultaneously.</p>
-      <div style="display:flex;gap:10px;flex-wrap:wrap"><a href="https://www.figma.com/make/79Uu2mYP7IxKzg7dlV6Bvx/High-Fidelity-Prototype--Copy-?fullscreen=1&t=q1JTf45eAVydBSLe-1" target="_blank" class="btn-dark">View interactive prototype ↗</a><a href="#flight-process" class="btn-ghost">Read case study</a></div>
-    </div>
-    <div class="csh-right"><img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663388297628/VVAEBUgfxqt7R8Cn3uHVPZ/hero-bg-jgsXG8uMB5DQJrh6ccBBxw.webp" alt="Flight booking"></div>
-  </div>
-
-  <div class="band band-white">
-    <div class="band-inner band-2col">
-      <div>
-        <div class="band-kicker">The Challenge</div>
-        <h3 class="band-title">The <em>Problem</em></h3>
-        <p class="band-desc">When I started this project, I observed a critical gap in the flight booking market. Travelers were forced to navigate a fragmented, frustrating experience across multiple platforms, each with its own design language and user flow.</p>
-        <br><br>
-        <p class="band-desc">These issues compounded to create a broken experience where users had to search multiple websites, manually compare prices, and piece together information to make a booking decision. I knew there had to be a better way.</p>
-      </div>
-      <div class="pain-list">
-        <div class="pain-item"><div class="pain-n">1</div><div><div class="pain-h">Confusing Websites</div><p class="pain-p">Booking platforms overwhelm users with cluttered interfaces, unclear information hierarchies, and inconsistent design patterns.</p></div></div>
-        <div class="pain-item"><div class="pain-n">2</div><div><div class="pain-h">Difficult Navigation</div><p class="pain-p">The booking process requires jumping between multiple steps and screens. Users lose context and must repeat information entry.</p></div></div>
-        <div class="pain-item"><div class="pain-n">3</div><div><div class="pain-h">Excessive Unnecessary Information</div><p class="pain-p">Too many options, irrelevant details, and competing CTAs distract from the core task. Users experience decision fatigue.</p></div></div>
-      </div>
-    </div>
-  </div>
-
-  <div class="band" id="process">
-    <div class="band-inner">
-      <div class="band-kicker">Discovery to Solution</div>
-      <h3 class="band-title">Pain Points &amp; <em>Design Iterations</em></h3>
-      <p class="band-desc" style="max-width:560px">Through user research, I identified specific pain points and designed targeted solutions to address each one.</p>
-      <div class="iter-table">
-        <div class="iter-row"><div class="iter-n">1</div><div class="iter-pain"><div class="iter-lbl">Pain Point</div><div class="iter-txt"><strong>Confusion Between Departure &amp; Return Flights</strong> — Users frequently didn't know which leg they were booking, leading to mistakes and backtracking.</div></div><div class="iter-sol"><div class="iter-lbl">Design Solution</div><div class="iter-txt">Clear visual separation with prominent headers, distinct colour coding, and a progress indicator showing which leg of the journey they're booking.</div></div></div>
-        <div class="iter-row"><div class="iter-n">2</div><div class="iter-pain"><div class="iter-lbl">Pain Point</div><div class="iter-txt"><strong>Unclear Confirmation Method</strong> — Users were often unsure whether booking would be confirmed via email or text, causing anxiety about their reservation.</div></div><div class="iter-sol"><div class="iter-lbl">Design Solution</div><div class="iter-txt">A clear confirmation screen that explicitly states how the booking is confirmed and outlines next steps — removing all ambiguity.</div></div></div>
-        <div class="iter-row"><div class="iter-n">3</div><div class="iter-pain"><div class="iter-lbl">Pain Point</div><div class="iter-txt"><strong>Poor Flight Details Highlighting</strong> — Duration, number of stops, and arrival time were buried or easy to miss in the original interface.</div></div><div class="iter-sol"><div class="iter-lbl">Design Solution</div><div class="iter-txt">Redesigned flight cards with clear visual hierarchy, larger typography, strategic colour use, and icons for key details at the top of each card.</div></div></div>
-        <div class="iter-row"><div class="iter-n">4</div><div class="iter-pain"><div class="iter-lbl">Pain Point</div><div class="iter-txt"><strong>Unclear Baggage Information</strong> — Users struggled to understand allowances, fees, and what was included with their ticket.</div></div><div class="iter-sol"><div class="iter-lbl">Design Solution</div><div class="iter-txt">A simplified baggage page with clear sections for included baggage, additional options, and pricing with visual icons and plain language.</div></div></div>
-        <div class="iter-row"><div class="iter-n">5</div><div class="iter-pain"><div class="iter-lbl">Pain Point</div><div class="iter-txt"><strong>Third-Party Seat Selection</strong> — Redirecting to a third-party seat picker broke the seamless booking flow and created friction.</div></div><div class="iter-sol"><div class="iter-lbl">Design Solution</div><div class="iter-txt">Seat selection integrated directly into the booking flow with an interactive seat map — no leaving the platform.</div></div></div>
-        <div class="iter-row"><div class="iter-n">6</div><div class="iter-pain"><div class="iter-lbl">Shared Value</div><div class="iter-txt"><strong>Efficiency</strong> — Every participant valued their time and wanted a streamlined experience above all else.</div></div><div class="iter-sol"><div class="iter-lbl">Design Solution</div><div class="iter-txt">The entire flow designed around efficiency — fewer form fields, no unnecessary steps, a clear linear path from search to confirmation.</div></div></div>
-      </div>
-    </div>
-  </div>
-
-  <div class="band band-sand" id="flight-process">
-    <div class="band-inner">
-      <div class="band-kicker">My Approach</div>
-      <h3 class="band-title">Design <em>Process</em></h3>
-      <p class="band-desc" style="max-width:540px">I followed a rigorous, user-centred design process to understand the problem deeply and create a solution that truly resonates with travellers.</p>
-      <div class="step-grid">
-        <div class="step-card"><div class="step-tag">Step 1</div><div class="step-name">User Research &amp; Testing</div><p class="step-body">In-depth usability testing with frequent flight bookers to understand pain points, behaviours, and needs.</p><ul class="step-bul"><li>Interviewed 12+ users across demographics</li><li>Observed real booking sessions</li><li>Identified common frustrations and needs</li></ul><div class="step-img"><img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663388297628/VVAEBUgfxqt7R8Cn3uHVPZ/step1-research-EpAU3p6eTf9RhVX4GV8SGn.webp" alt="Research"></div></div>
-        <div class="step-card"><div class="step-tag">Step 2</div><div class="step-name">Synthesis &amp; Analysis</div><p class="step-body">Organised research findings into affinity diagrams and detailed journey maps for each booking stage.</p><ul class="step-bul"><li>Built affinity diagrams from research notes</li><li>Mapped 5 key journey stages with emotions</li><li>Identified critical moments and opportunities</li></ul><div class="step-img"><img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663388297628/VVAEBUgfxqt7R8Cn3uHVPZ/step2-analysis-L6fM4JLSxg62a2N97CPuRc.webp" alt="Analysis"></div></div>
-        <div class="step-card"><div class="step-tag">Step 3</div><div class="step-name">Sketches &amp; Ideation</div><p class="step-body">Sketched multiple approaches across different information architectures and interaction patterns.</p><ul class="step-bul"><li>Rapid sketching of multiple solutions</li><li>Explored different information hierarchies</li><li>Selected most promising directions</li></ul><div class="step-img"><img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663388297628/VVAEBUgfxqt7R8Cn3uHVPZ/step3-sketches-WMonn9AvYjme8szDN2N9hU.webp" alt="Sketches"></div></div>
-        <div class="step-card"><div class="step-tag">Step 4</div><div class="step-name">Prototyping &amp; Refinement</div><p class="step-body">Built medium-fidelity prototypes for testing, then high-fidelity with a complete visual design system.</p><ul class="step-bul"><li>Built medium-fidelity prototypes for testing</li><li>Iterated based on user feedback</li><li>Created final high-fidelity design system</li></ul><div class="step-img"><img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663388297628/VVAEBUgfxqt7R8Cn3uHVPZ/step4-prototyping-oQt657G6AtsJ2gBxxypd8k.webp" alt="Prototyping"></div></div>
-      </div>
-      <div class="proto-row">
-        <a href="https://www.figma.com/make/79Uu2mYP7IxKzg7dlV6Bvx/High-Fidelity-Prototype--Copy-?fullscreen=1&t=q1JTf45eAVydBSLe-1" target="_blank" class="proto-card"><div class="proto-title">View interactive prototype</div><div class="proto-desc">High-fidelity Figma prototype — explore the full flight booking flow</div><div class="proto-link">Open in Figma ↗</div></a>
-        <a href="https://miro.com/app/board/uXjVJmqObNk=/?share_link_id=706348799805" target="_blank" class="proto-card"><div class="proto-title">Miro Research Board</div><div class="proto-desc">View research findings, affinity diagrams, and journey maps</div><div class="proto-link">Open in Miro ↗</div></a>
-      </div>
-    </div>
-  </div>
-
-  <div class="band band-white">
-    <div class="band-inner">
-      <div class="band-kicker">The Result</div>
-      <h3 class="band-title">The <em>Solution</em></h3>
-      <p class="band-desc" style="max-width:580px">A unified flight search interface that simplifies the entire booking journey. Users compare prices, airlines, and times in one beautiful, intuitive space.</p>
-      <div class="sol-mockup"><img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663388297628/VVAEBUgfxqt7R8Cn3uHVPZ/project-mockup-KBYKj3KBDAx2ujA3sFF3Mm.webp" alt="Flight mockup"></div>
-      <h4 style="font-family:var(--serif);font-size:20px;font-weight:400;color:var(--ink);margin-bottom:14px">Key improvements</h4>
-      <div class="improve-grid"><div class="improve-item">Reduced search steps from 5+ to 3 clicks</div><div class="improve-item">Real-time comparison of 200+ airlines</div><div class="improve-item">Personalized price alerts and recommendations</div><div class="improve-item">Seamless booking flow with saved preferences</div></div>
-      <h4 style="font-family:var(--serif);font-size:20px;font-weight:400;color:var(--ink);margin-bottom:14px">Unique features</h4>
-      <div class="feat-grid"><div class="feat-item"><h4>Universal Search</h4><p>Search hundreds of airlines, travel sites, and booking platforms simultaneously to find the best deals.</p></div><div class="feat-item"><h4>Instant Comparisons</h4><p>See real-time price comparisons across multiple airlines and dates at a glance.</p></div><div class="feat-item"><h4>Exclusive Offers</h4><p>Access exclusive deals and partnerships not available on individual airline websites.</p></div></div>
-    </div>
-  </div>
-</div>
-
-<!-- ═══════════════════════════
-     CASE STUDY 2: GOODREADS
-═══════════════════════════ -->
-<div class="cs-section" id="goodreads-study">
-  <div class="cs-head">
-    <div class="csh-left">
-      <div class="cs-num">Case Study 02</div>
-      <h2 class="cs-title">Goodreads<br><em>Redesign</em></h2>
-      <p class="cs-sub">Modernising a beloved but neglected reading platform — preserving the cozy, bookish warmth while fixing a decade of design debt and rethinking the flows readers rely on every day.</p>
-      <div style="display:flex;gap:10px;flex-wrap:wrap">
-        <a href="goodreads-redesign.html" target="_blank" class="btn-dark">View interactive prototype ↗</a>
-        <a href="#gr-process" class="btn-ghost">Read case study</a>
-      </div>
-    </div>
-    <div class="csh-right" style="background:linear-gradient(145deg,#2a1f14,#1a1008)">
-      <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;gap:10px;padding:40px">
-        <div style="width:48px;height:90px;background:linear-gradient(145deg,#7A5C40,#4A3020);border-radius:2px 6px 6px 2px;box-shadow:3px 5px 16px rgba(0,0,0,.5)"></div>
-        <div style="width:44px;height:82px;background:linear-gradient(145deg,#3D5A4A,#243830);border-radius:2px 6px 6px 2px;box-shadow:3px 5px 16px rgba(0,0,0,.5)"></div>
-        <div style="width:50px;height:96px;background:linear-gradient(145deg,#4A4060,#2A2040);border-radius:2px 6px 6px 2px;box-shadow:3px 5px 16px rgba(0,0,0,.5)"></div>
-        <div style="width:46px;height:86px;background:linear-gradient(145deg,#5A3D2A,#3A2018);border-radius:2px 6px 6px 2px;box-shadow:3px 5px 16px rgba(0,0,0,.5)"></div>
-        <div style="width:42px;height:78px;background:linear-gradient(145deg,#604040,#402020);border-radius:2px 6px 6px 2px;box-shadow:3px 5px 16px rgba(0,0,0,.5)"></div>
-      </div>
-    </div>
-  </div>
-
-  <div class="band band-white">
-    <div class="band-inner band-2col">
-      <div>
-        <div class="band-kicker">The Challenge</div>
-        <h3 class="band-title">The <em>Problem</em></h3>
-        <p class="band-desc">Goodreads has over 150 million users and the largest book review database on the internet — yet its design hasn't meaningfully evolved since Amazon acquired it in 2013.</p>
-        <br><br>
-        <p class="band-desc">The platform retains its loyal user base through network effects and utility alone, while competitors like StoryGraph and Literal win over users who want the same functionality in a product that feels cared for.</p>
-        <br><br>
-        <p class="band-desc">This redesign honours the warmth Goodreads is known for while fixing the structural problems that make it frustrating to use every day.</p>
-      </div>
-      <div class="pain-list">
-        <div class="pain-item"><div class="pain-n">1</div><div><div class="pain-h">Noisy, Low-Signal Home Feed</div><p class="pain-p">Ads, generic recommendations, and friend updates are mixed with no way to filter or prioritise the content users actually come for.</p></div></div>
-        <div class="pain-item"><div class="pain-n">2</div><div><div class="pain-h">Painful Progress Logging</div><p class="pain-p">Updating reading progress requires 3+ taps with no persistent shortcut — a high-friction interaction for the most common daily action.</p></div></div>
-        <div class="pain-item"><div class="pain-n">3</div><div><div class="pain-h">Weak Discovery Despite Rich Data</div><p class="pain-p">After 15+ years of shelf data, recommendations feel generic. Community lists are buried despite being the best discovery surface.</p></div></div>
-        <div class="pain-item"><div class="pain-n">4</div><div><div class="pain-h">Visual Design Frozen in 2011</div><p class="pain-p">Inconsistent components, a cramped layout, and no evident design system make the product feel unmaintained and hard to trust.</p></div></div>
-      </div>
-    </div>
-  </div>
-
-  <div class="band" id="gr-process">
-    <div class="band-inner">
-      <div class="band-kicker">User Research</div>
-      <h3 class="band-title">Research &amp; <em>Key Insights</em></h3>
-      <p class="band-desc" style="max-width:560px">I combined desk research, competitive audit, user interviews, and usability walkthroughs to build a complete picture of where Goodreads fails its users.</p>
-      <div class="iter-table">
-        <div class="iter-row"><div class="iter-n">01</div><div class="iter-pain"><div class="iter-lbl">Research Method</div><div class="iter-txt"><strong>Desk Research</strong> — Analysed 200+ App Store reviews, Reddit threads on r/goodreads and r/books, and public UX teardowns to identify recurring complaint themes.</div></div><div class="iter-sol"><div class="iter-lbl">Key Finding</div><div class="iter-txt">4 of 5 interviewees described Goodreads as a habit they tolerate, not a product they love. "I wouldn't recommend it" appeared repeatedly.</div></div></div>
-        <div class="iter-row"><div class="iter-n">02</div><div class="iter-pain"><div class="iter-lbl">Research Method</div><div class="iter-txt"><strong>Competitive Audit</strong> — Side-by-side evaluation of StoryGraph, Literal, and Letterboxd across 8 core tasks including finding a book, logging progress, and writing a review.</div></div><div class="iter-sol"><div class="iter-lbl">Key Finding</div><div class="iter-txt">Letterboxd proves social media for media tracking can be beautifully designed. Goodreads' closest analogue is doing it better in every design dimension.</div></div></div>
-        <div class="iter-row"><div class="iter-n">03</div><div class="iter-pain"><div class="iter-lbl">Research Method</div><div class="iter-txt"><strong>User Interviews</strong> — 5 moderated sessions (45 min each) with active Goodreads users across reading frequency levels.</div></div><div class="iter-sol"><div class="iter-lbl">Key Finding</div><div class="iter-txt">Logging reading progress was the most common daily action and universally described as "more steps than it should be." The cozy feel was mentioned unprompted as something to preserve.</div></div></div>
-        <div class="iter-row"><div class="iter-n">04</div><div class="iter-pain"><div class="iter-lbl">Research Method</div><div class="iter-txt"><strong>Usability Walkthrough</strong> — Task-based walkthroughs of 6 core journeys on current Goodreads (web + mobile), noting friction points, dead ends, and confusion.</div></div><div class="iter-sol"><div class="iter-lbl">Key Finding</div><div class="iter-txt">Community lists were the most loved discovery feature. Algorithmic recommendations were largely ignored — users preferred human-curated lists over algorithmic suggestions.</div></div></div>
-      </div>
-    </div>
-  </div>
-
-  <div class="band band-sand">
-    <div class="band-inner">
-      <div class="band-kicker">User Personas</div>
-      <h3 class="band-title">Who We're <em>Designing For</em></h3>
-      <p class="band-desc" style="max-width:540px">Three distinct user archetypes emerged from interviews, each with a different primary motivation for using Goodreads.</p>
-      <div class="step-grid" style="grid-template-columns:1fr 1fr 1fr">
-        <div class="step-card"><div style="width:38px;height:38px;border-radius:50%;background:#FAEEDA;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:600;color:#633806">SR</div><div class="step-tag">Persona 01</div><div class="step-name">The Habit Tracker</div><p class="step-body">28, grad student. Reads 30+ books/year. Uses Goodreads daily to log progress and hit her reading challenge goal.</p><ul class="step-bul"><li>Needs quick progress logging</li><li>Wants prominent reading stats</li><li>Values the annual challenge tracker</li></ul></div>
-        <div class="step-card"><div style="width:38px;height:38px;border-radius:50%;background:#E1F5EE;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:600;color:#085041">MK</div><div class="step-tag">Persona 02</div><div class="step-name">The Social Reader</div><p class="step-body">41, teacher. Reads ~12 books/year. Comes to see what friends are reading and leave thoughtful reviews.</p><ul class="step-bul"><li>Needs a clean friend activity feed</li><li>Wants richer review tools</li><li>Values discussion boards</li></ul></div>
-        <div class="step-card"><div style="width:38px;height:38px;border-radius:50%;background:#FAECE7;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:600;color:#712B13">LP</div><div class="step-tag">Persona 03</div><div class="step-name">The Discoverer</div><p class="step-body">34, designer. Reads ~8 books/year. Comes to Goodreads for community lists and genre rabbit holes.</p><ul class="step-bul"><li>Needs curated lists front and centre</li><li>Wants mood-based filtering</li><li>Values genre deep-dives</li></ul></div>
-      </div>
-      <div class="proto-row">
-        <a href="goodreads-redesign.html" target="_blank" class="proto-card"><div class="proto-title">View interactive prototype</div><div class="proto-desc">Fully interactive mockup — home feed, book detail, shelves, discovery, friends &amp; search</div><div class="proto-link">Open prototype ↗</div></a>
-        <div class="proto-card" style="cursor:default"><div class="proto-title">Screens covered</div><div style="display:flex;flex-direction:column;gap:7px;margin-top:6px"><div style="font-size:13px;color:var(--ink3);padding-left:12px;position:relative"><span style="position:absolute;left:0;color:var(--stone2)">—</span>Home feed with friend-first filtering</div><div style="font-size:13px;color:var(--ink3);padding-left:12px;position:relative"><span style="position:absolute;left:0;color:var(--stone2)">—</span>Book detail with edition notice</div><div style="font-size:13px;color:var(--ink3);padding-left:12px;position:relative"><span style="position:absolute;left:0;color:var(--stone2)">—</span>My shelves with reading stats</div><div style="font-size:13px;color:var(--ink3);padding-left:12px;position:relative"><span style="position:absolute;left:0;color:var(--stone2)">—</span>Discovery with mood filters + lists</div></div></div>
-      </div>
-    </div>
-  </div>
-
-  <div class="band band-white">
-    <div class="band-inner">
-      <div class="band-kicker">The Result</div>
-      <h3 class="band-title">Design <em>Decisions</em></h3>
-      <p class="band-desc" style="max-width:580px">Each design decision maps directly back to a research finding. The redesign preserves the warmth of Goodreads while resolving its most critical usability failures.</p>
-      <div class="improve-grid" style="grid-template-columns:1fr 1fr;margin-bottom:36px">
-        <div class="improve-item">Friend activity surfaces first — no more noise from ads</div>
-        <div class="improve-item">Feed filter pills let users control what they see in one tap</div>
-        <div class="improve-item">Progress update widget is persistent — one click from anywhere</div>
-        <div class="improve-item">Reading stats front and centre on the shelves page</div>
-        <div class="improve-item">Edition notice surfaces bad-data problem with a one-click fix</div>
-        <div class="improve-item">Community lists elevated to first-class discovery surface</div>
-        <div class="improve-item">Mood-based filtering replaces the weak genre taxonomy</div>
-        <div class="improve-item">Warm cream palette and serif type preserve the cozy brand feel</div>
-      </div>
-      
-    </div>
-  </div>
-</div>
-
-<!-- ═══════════════════════════
-     CASE STUDY 3: DAWSON MOTORS (AUTO SHOP)
-═══════════════════════════ -->
-<div class="cs-section" id="autoshop-study">
-  <div class="cs-head">
-    <div class="csh-left">
-      <div class="cs-num">Case Study 03</div>
-      <h2 class="cs-title">Dawson Motors<br><em>Redesign</em></h2>
-      <p class="cs-sub">A family-owned auto shop had been serving the same town since 1982 — but their website hadn't kept pace. I rebuilt it from the ground up to reflect the trust and craft of the business itself.</p>
-      <div style="display:flex;gap:10px;flex-wrap:wrap">
-        <a href="https://lovable.dev/preview/8S4A72BshNFWRYaCLD2oNclWwuToxRZ7" target="_blank" class="btn-dark">View interactive prototype ↗</a>
-        <a href="#autoshop-process" class="btn-ghost">Read case study</a>
-      </div>
-    </div>
-    <div class="csh-right"><img src="assets/dawson-after-hero.png" alt="Dawson Motors redesigned homepage"></div>
-  </div>
-
-  <div class="band band-white">
-    <div class="band-inner band-2col">
-      <div>
-        <div class="band-kicker">The Challenge</div>
-        <h3 class="band-title">The <em>Problem</em></h3>
-        <p class="band-desc">Dawson Motors is a two-sided business — a pre-owned car lot and a full-service repair shop — but their existing site treated both as an afterthought. Flat grey navigation buttons, a cramped inventory carousel, and a dated "click here to text us" graphic gave visitors no sense of the business behind them.</p>
-        <br><br>
-        <p class="band-desc">The contact page was worse: a generic form with no visual hierarchy, business hours buried in plain text, and no clear path for a visitor who just wanted to book a service appointment. For a shop built on 40+ years of local trust, the site was actively working against that reputation.</p>
-      </div>
-      <div class="pain-list">
-        <div class="pain-item"><div class="pain-n">1</div><div><div class="pain-h">No Visual Trust Signals</div><p class="pain-p">Four decades of reputation, certifications, and reviews existed nowhere near the top of the page where a new visitor would see them.</p></div></div>
-        <div class="pain-item"><div class="pain-n">2</div><div><div class="pain-h">Sales & Service Competing for Space</div><p class="pain-p">Buying a car and booking a repair are completely different intents, but the homepage gave them equal, undifferentiated weight in a flat button row.</p></div></div>
-        <div class="pain-item"><div class="pain-n">3</div><div><div class="pain-h">Dated, Low-Credibility Visual Design</div><p class="pain-p">Grey system-default buttons, cramped inventory thumbnails, and clip-art-style graphics made the shop feel smaller and less established than it is.</p></div></div>
-        <div class="pain-item"><div class="pain-n">4</div><div><div class="pain-h">Contact Form With No Guidance</div><p class="pain-p">A single generic form handled every inquiry type, forcing visitors to guess whether they were in the right place to book service or ask about a vehicle.</p></div></div>
-      </div>
-    </div>
-  </div>
-
-  <div class="band" id="autoshop-process">
-    <div class="band-inner">
-      <div class="band-kicker">My Approach</div>
-      <h3 class="band-title">UX Audit &amp; <em>Design Process</em></h3>
-      <p class="band-desc" style="max-width:560px">This was a self-directed redesign, so rather than user interviews, I ran a structured heuristic evaluation of the live site against Nielsen's usability principles, benchmarked it against modern auto shop and dealership sites, and rebuilt the experience around the two clearest visitor intents: buying a car and booking service.</p>
-      <div class="iter-table">
-        <div class="iter-row"><div class="iter-n">1</div><div class="iter-pain"><div class="iter-lbl">Audit Finding</div><div class="iter-txt"><strong>Weak Visual Hierarchy</strong> — Every nav item, badge, and CTA looked the same weight, so nothing told a first-time visitor where to look first.</div></div><div class="iter-sol"><div class="iter-lbl">Design Solution</div><div class="iter-txt">A clear hero with one dominant headline, two distinct primary CTAs ("Book Service" / "Browse Sales"), and trust stats pulled above the fold.</div></div></div>
-        <div class="iter-row"><div class="iter-n">2</div><div class="iter-pain"><div class="iter-lbl">Audit Finding</div><div class="iter-txt"><strong>Trust Was Implied, Not Shown</strong> — "Family-owned since 1982" existed nowhere on the original homepage despite being the shop's strongest differentiator.</div></div><div class="iter-sol"><div class="iter-lbl">Design Solution</div><div class="iter-txt">A badge, headline, and stat bar (40+ years, 5-star Carfax rating, NAPA AutoCare status) surface credibility in the first five seconds.</div></div></div>
-        <div class="iter-row"><div class="iter-n">3</div><div class="iter-pain"><div class="iter-lbl">Audit Finding</div><div class="iter-txt"><strong>One-Size-Fits-All Contact Form</strong> — Sales and service inquiries funneled into the same undifferentiated form, adding friction for both.</div></div><div class="iter-sol"><div class="iter-lbl">Design Solution</div><div class="iter-txt">An "I'm interested in" selector splits the form by intent (Vehicle vs. Other), with direct call/text numbers surfaced for anyone who'd rather skip the form.</div></div></div>
-        <div class="iter-row"><div class="iter-n">4</div><div class="iter-pain"><div class="iter-lbl">Audit Finding</div><div class="iter-txt"><strong>No Responsive or Modern Layout</strong> — Fixed-width tables and small tap targets made the original site difficult to use on mobile.</div></div><div class="iter-sol"><div class="iter-lbl">Design Solution</div><div class="iter-txt">Rebuilt as a fully responsive layout in Lovable with generous spacing, larger touch targets, and a consistent component system throughout.</div></div></div>
-      </div>
-    </div>
-  </div>
-
-  <div class="band band-sand">
-    <div class="band-inner">
-      <div class="band-kicker">Before &amp; After</div>
-      <h3 class="band-title">Homepage <em>Comparison</em></h3>
-      <p class="band-desc" style="max-width:560px">The original homepage buried the shop's two core offerings inside a flat navigation bar and a cramped inventory carousel. The redesign leads with trust and a clear choice.</p>
-      <div class="compare-grid">
-        <div class="compare-col">
-          <div class="compare-tag is-before">Before</div>
-          <div class="compare-frame"><img src="assets/dawson-before-inventory.png" alt="Original Dawson Motors homepage with flat navigation and cramped inventory carousel"></div>
-          <p class="compare-cap">Flat grey nav buttons, a cramped inventory carousel, and a dated "text us" graphic — no visual hierarchy or trust signals.</p>
-        </div>
-        <div class="compare-col">
-          <div class="compare-tag is-after">After</div>
-          <div class="compare-frame"><img src="assets/dawson-after-hero.png" alt="Redesigned Dawson Motors homepage with clear hero and CTAs"></div>
-          <p class="compare-cap">A confident hero headline, two clear CTAs by intent, and trust stats (40+ years, 5-star rating, NAPA status) above the fold.</p>
-        </div>
-      </div>
-      <h3 class="band-title" style="margin-top:8px">Contact Page <em>Comparison</em></h3>
-      <p class="band-desc" style="max-width:560px">Booking service or asking about a vehicle used to mean filling out the same generic form. The redesign asks one question first — what do you need? — then adapts.</p>
-      <div class="compare-grid">
-        <div class="compare-col">
-          <div class="compare-tag is-before">Before</div>
-          <div class="compare-frame"><img src="assets/dawson-before-contact.png" alt="Original Dawson Motors contact page with generic form"></div>
-          <p class="compare-cap">A single undifferentiated form with plain-text hours and contact info, no guidance for the visitor's actual intent.</p>
-        </div>
-        <div class="compare-col">
-          <div class="compare-tag is-after">After</div>
-          <div class="compare-frame"><img src="assets/dawson-after-contact.png" alt="Redesigned Dawson Motors contact page with intent selector"></div>
-          <p class="compare-cap">An "I'm interested in" selector splits the flow by intent, with direct call/text numbers surfaced for anyone who wants to skip the form.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="band band-white">
-    <div class="band-inner">
-      <div class="band-kicker">The Result</div>
-      <h3 class="band-title">Design <em>Decisions &amp; Learnings</em></h3>
-      <p class="band-desc" style="max-width:580px">Every change traces back to a specific audit finding — the goal was a site that feels as trustworthy as the business it represents, for both a car buyer and a service customer.</p>
-      <div class="improve-grid" style="grid-template-columns:1fr 1fr;margin-bottom:36px">
-        <div class="improve-item">Two distinct CTAs replace one undifferentiated nav bar</div>
-        <div class="improve-item">Trust signals (years, rating, certification) surfaced above the fold</div>
-        <div class="improve-item">Contact form splits by intent instead of one generic form</div>
-        <div class="improve-item">Direct call/text numbers offered as a low-friction alternative</div>
-        <div class="improve-item">Fully responsive layout with consistent spacing and components</div>
-        <div class="improve-item">Warm, editorial hero treatment replaces flat system-default buttons</div>
-      </div>
-      <h4 style="font-family:var(--serif);font-size:20px;font-weight:400;color:var(--ink);margin-bottom:14px">What I'd do next</h4>
-      <div class="feat-grid"><div class="feat-item"><h4>Validate With Real Customers</h4><p>Run a short usability test with a few actual Dawson Motors customers to confirm the intent-split contact flow reduces confusion in practice.</p></div><div class="feat-item"><h4>Inventory Filtering</h4><p>Add filters for price, make, and mileage to the vehicle listings, which were still a flat carousel in this pass of the redesign.</p></div><div class="feat-item"><h4>Service Booking Flow</h4><p>Extend "Book Service" into a full scheduling flow with date/time selection, rather than routing into the general contact form.</p></div></div>
-    </div>
-  </div>
-</div>
+  </div></section>
 
 <!-- CONTACT NUDGE -->
+
 <div class="cta-band">
   <h2>Let's <em>connect</em></h2>
   <p>I'm currently open to new UX roles. If my work resonates, I'd love to hear from you.</p>
@@ -673,6 +394,7 @@ footer{background:var(--sand2);border-top:1px solid var(--border)}
 </div>
 
 <!-- FOOTER -->
+
 <footer>
   <div class="footer-inner">
     <div class="footer-brand">
@@ -681,7 +403,7 @@ footer{background:var(--sand2);border-top:1px solid var(--border)}
     </div>
     <div class="footer-col">
       <h4>Navigation</h4>
-      <ul><li><a href="#projects">Projects</a></li><li><a href="#flight-study">Flight Booking</a></li><li><a href="#goodreads-study">Goodreads Redesign</a></li><li><a href="#autoshop-study">Dawson Motors Redesign</a></li><li><a href="about.html">About</a></li></ul>
+      <ul><li><a href="index.html#projects">Projects</a></li><li><a href="flight-booking.html">Flight Booking</a></li><li><a href="goodreads-case-study.html">Goodreads Redesign</a></li><li><a href="dawson-motors.html">Dawson Motors Redesign</a></li><li><a href="about.html">About</a></li></ul>
     </div>
     <div class="footer-col">
       <h4>Connect</h4>
