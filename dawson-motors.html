@@ -35,6 +35,8 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(242,237,228,
 .nav-links{display:flex;align-items:center;gap:28px;list-style:none}
 .nav-links a{font-size:13px;color:var(--ink3);letter-spacing:.02em;transition:color .2s}
 .nav-links a:hover{color:var(--ink)}
+.nav-resume{background:var(--ink);color:var(--white)!important;padding:7px 16px;border-radius:20px;font-size:12px!important;font-weight:500}
+.nav-resume:hover{background:var(--ink2);color:var(--white)!important}
 
 /* HERO */
 .hero{min-height:100vh;padding-top:60px;display:grid;grid-template-columns:1fr 1fr;overflow:hidden}
@@ -146,6 +148,10 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(242,237,228,
 .csh-left{padding:80px;display:flex;flex-direction:column;justify-content:center;gap:16px;border-right:1px solid var(--border)}
 .csh-right{background:var(--sand2);min-height:420px;position:relative;overflow:hidden}
 .csh-right img{width:100%;height:100%;object-fit:cover;opacity:.5}
+.cs-meta{display:flex;gap:28px;flex-wrap:wrap;padding-top:4px;padding-bottom:4px}
+.cs-meta-item{display:flex;flex-direction:column;gap:3px}
+.cs-meta-lbl{font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--ink3)}
+.cs-meta-val{font-size:14px;color:var(--ink);font-weight:400}
 .cs-num{font-size:11px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--sage)}
 .cs-title{font-family:var(--serif);font-size:clamp(34px,4vw,52px);font-weight:300;letter-spacing:-.02em;line-height:1.1;color:var(--ink)}
 .cs-title em{font-style:italic;color:var(--sage)}
@@ -246,12 +252,13 @@ footer{background:var(--sand2);border-top:1px solid var(--border)}
       <div class="nav-mark">CR</div>
       Courtney Reicherter
     </a>
-    <ul class="nav-links">
+        <ul class="nav-links">
       <li><a href="index.html#projects">Projects</a></li>
       <li><a href="flight-booking.html">Flight Booking</a></li>
       <li><a href="goodreads-case-study.html">Goodreads</a></li>
       <li><a href="dawson-motors.html">Dawson Motors</a></li>
       <li><a href="about.html">About</a></li>
+      <li><a href="assets/Courtney_Reicherter_Resume.pdf" target="_blank" class="nav-resume">Resume ↗</a></li>
     </ul>
   </div>
 </nav>
@@ -263,6 +270,12 @@ footer{background:var(--sand2);border-top:1px solid var(--border)}
       <div class="cs-num">Case Study 03</div>
       <h2 class="cs-title">Dawson Motors<br><em>Redesign</em></h2>
       <p class="cs-sub">A family-owned auto shop had been serving the same town since 1982 — but their website hadn't kept pace. I rebuilt it from the ground up to reflect the trust and craft of the business itself.</p>
+      <div class="cs-meta">
+        <div class="cs-meta-item"><div class="cs-meta-lbl">Role</div><div class="cs-meta-val">Freelance UX Designer (solo)</div></div>
+        <div class="cs-meta-item"><div class="cs-meta-lbl">Timeline</div><div class="cs-meta-val">June 2025</div></div>
+        <div class="cs-meta-item"><div class="cs-meta-lbl">Tools</div><div class="cs-meta-val">Lovable</div></div>
+        <div class="cs-meta-item"><div class="cs-meta-lbl">Type</div><div class="cs-meta-val">Freelance client project</div></div>
+      </div>
       <div style="display:flex;gap:10px;flex-wrap:wrap">
         <a href="https://lovable.dev/preview/8S4A72BshNFWRYaCLD2oNclWwuToxRZ7" target="_blank" class="btn-dark">View interactive prototype ↗</a>
         <a href="#autoshop-process" class="btn-ghost">Read case study</a>
@@ -293,7 +306,7 @@ footer{background:var(--sand2);border-top:1px solid var(--border)}
     <div class="band-inner">
       <div class="band-kicker">My Approach</div>
       <h3 class="band-title">UX Audit &amp; <em>Design Process</em></h3>
-      <p class="band-desc" style="max-width:560px">This was a self-directed redesign, so rather than user interviews, I ran a structured heuristic evaluation of the live site against Nielsen's usability principles, benchmarked it against modern auto shop and dealership sites, and rebuilt the experience around the two clearest visitor intents: buying a car and booking service.</p>
+      <p class="band-desc" style="max-width:560px">This was a freelance engagement for a real client, so rather than starting with formal user interviews, I opened with a structured UX audit of the live site — evaluating it against Nielsen's usability heuristics and benchmarking it against modern auto shop and dealership sites — then rebuilt the experience around the two clearest visitor intents: buying a car and booking service.</p>
       <div class="iter-table">
         <div class="iter-row"><div class="iter-n">1</div><div class="iter-pain"><div class="iter-lbl">Audit Finding</div><div class="iter-txt"><strong>Weak Visual Hierarchy</strong> — Every nav item, badge, and CTA looked the same weight, so nothing told a first-time visitor where to look first.</div></div><div class="iter-sol"><div class="iter-lbl">Design Solution</div><div class="iter-txt">A clear hero with one dominant headline, two distinct primary CTAs ("Book Service" / "Browse Sales"), and trust stats pulled above the fold.</div></div></div>
         <div class="iter-row"><div class="iter-n">2</div><div class="iter-pain"><div class="iter-lbl">Audit Finding</div><div class="iter-txt"><strong>Trust Was Implied, Not Shown</strong> — "Family-owned since 1982" existed nowhere on the original homepage despite being the shop's strongest differentiator.</div></div><div class="iter-sol"><div class="iter-lbl">Design Solution</div><div class="iter-txt">A badge, headline, and stat bar (40+ years, 5-star Carfax rating, NAPA AutoCare status) surface credibility in the first five seconds.</div></div></div>
@@ -349,6 +362,7 @@ footer{background:var(--sand2);border-top:1px solid var(--border)}
         <div class="improve-item">Direct call/text numbers offered as a low-friction alternative</div>
         <div class="improve-item">Fully responsive layout with consistent spacing and components</div>
         <div class="improve-item">Warm, editorial hero treatment replaces flat system-default buttons</div>
+        <div class="improve-item">Placeholder inventory imagery used throughout to respect the client's request for vehicle and pricing privacy</div>
       </div>
       <h4 style="font-family:var(--serif);font-size:20px;font-weight:400;color:var(--ink);margin-bottom:14px">What I'd do next</h4>
       <div class="feat-grid"><div class="feat-item"><h4>Validate With Real Customers</h4><p>Run a short usability test with a few actual Dawson Motors customers to confirm the intent-split contact flow reduces confusion in practice.</p></div><div class="feat-item"><h4>Inventory Filtering</h4><p>Add filters for price, make, and mileage to the vehicle listings, which were still a flat carousel in this pass of the redesign.</p></div><div class="feat-item"><h4>Service Booking Flow</h4><p>Extend "Book Service" into a full scheduling flow with date/time selection, rather than routing into the general contact form.</p></div></div>
@@ -381,7 +395,7 @@ footer{background:var(--sand2);border-top:1px solid var(--border)}
     </div>
     <div class="footer-col">
       <h4>Connect</h4>
-      <ul><li><a href="https://linkedin.com/in/courtney-reicherter-0b84b7297/" target="_blank">LinkedIn</a></li></ul>
+      <ul><li><a href="https://linkedin.com/in/courtney-reicherter-0b84b7297/" target="_blank">LinkedIn</a></li><li><a href="assets/Courtney_Reicherter_Resume.pdf" target="_blank">Resume (PDF)</a></li></ul>
     </div>
   </div>
   <div class="footer-bottom">© 2026 Courtney Reicherter. All rights reserved.</div>
