@@ -35,6 +35,8 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(242,237,228,
 .nav-links{display:flex;align-items:center;gap:28px;list-style:none}
 .nav-links a{font-size:13px;color:var(--ink3);letter-spacing:.02em;transition:color .2s}
 .nav-links a:hover{color:var(--ink)}
+.nav-resume{background:var(--ink);color:var(--white)!important;padding:7px 16px;border-radius:20px;font-size:12px!important;font-weight:500}
+.nav-resume:hover{background:var(--ink2);color:var(--white)!important}
 
 /* HERO */
 .hero{min-height:100vh;padding-top:60px;display:grid;grid-template-columns:1fr 1fr;overflow:hidden}
@@ -146,6 +148,10 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(242,237,228,
 .csh-left{padding:80px;display:flex;flex-direction:column;justify-content:center;gap:16px;border-right:1px solid var(--border)}
 .csh-right{background:var(--sand2);min-height:420px;position:relative;overflow:hidden}
 .csh-right img{width:100%;height:100%;object-fit:cover;opacity:.5}
+.cs-meta{display:flex;gap:28px;flex-wrap:wrap;padding-top:4px;padding-bottom:4px}
+.cs-meta-item{display:flex;flex-direction:column;gap:3px}
+.cs-meta-lbl{font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--ink3)}
+.cs-meta-val{font-size:14px;color:var(--ink);font-weight:400}
 .cs-num{font-size:11px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--sage)}
 .cs-title{font-family:var(--serif);font-size:clamp(34px,4vw,52px);font-weight:300;letter-spacing:-.02em;line-height:1.1;color:var(--ink)}
 .cs-title em{font-style:italic;color:var(--sage)}
@@ -246,12 +252,13 @@ footer{background:var(--sand2);border-top:1px solid var(--border)}
       <div class="nav-mark">CR</div>
       Courtney Reicherter
     </a>
-    <ul class="nav-links">
+        <ul class="nav-links">
       <li><a href="index.html#projects">Projects</a></li>
       <li><a href="flight-booking.html">Flight Booking</a></li>
       <li><a href="goodreads-case-study.html">Goodreads</a></li>
       <li><a href="dawson-motors.html">Dawson Motors</a></li>
       <li><a href="about.html">About</a></li>
+      <li><a href="assets/Courtney_Reicherter_Resume.pdf" target="_blank" class="nav-resume">Resume ↗</a></li>
     </ul>
   </div>
 </nav>
@@ -263,6 +270,12 @@ footer{background:var(--sand2);border-top:1px solid var(--border)}
       <div class="cs-num">Case Study 02</div>
       <h2 class="cs-title">Goodreads<br><em>Redesign</em></h2>
       <p class="cs-sub">Modernising a beloved but neglected reading platform — preserving the cozy, bookish warmth while fixing a decade of design debt and rethinking the flows readers rely on every day.</p>
+      <div class="cs-meta">
+        <div class="cs-meta-item"><div class="cs-meta-lbl">Role</div><div class="cs-meta-val">UX Researcher &amp; Designer (solo)</div></div>
+        <div class="cs-meta-item"><div class="cs-meta-lbl">Timeline</div><div class="cs-meta-val">~2 weeks</div></div>
+        <div class="cs-meta-item"><div class="cs-meta-lbl">Tools</div><div class="cs-meta-val">Figma, Miro</div></div>
+        <div class="cs-meta-item"><div class="cs-meta-lbl">Type</div><div class="cs-meta-val">Speculative redesign</div></div>
+      </div>
       <div style="display:flex;gap:10px;flex-wrap:wrap">
         <a href="goodreads-redesign.html" target="_blank" class="btn-dark">View interactive prototype ↗</a>
         <a href="#gr-process" class="btn-ghost">Read case study</a>
@@ -347,7 +360,19 @@ footer{background:var(--sand2);border-top:1px solid var(--border)}
       </div>
       
     </div>
-  </div></div>
+  </div>
+
+  <div class="band band-sand">
+    <div class="band-inner">
+      <div class="band-kicker">Reflection</div>
+      <h3 class="band-title">Learnings &amp; <em>What I'd Do Next</em></h3>
+      <p class="band-desc" style="max-width:580px">Redesigning a beloved, entrenched product taught me as much about restraint as it did about problem-solving — the goal wasn't to reinvent Goodreads, but to fix what was broken without losing what people love.</p>
+      <div class="feat-grid">
+        <div class="feat-item"><h4>Protect the Emotional Core First</h4><p>Every interview reinforced that "cozy" wasn't a nice-to-have — it was the reason people stayed despite the friction. I'd start future redesigns by explicitly defining what not to change.</p></div>
+        <div class="feat-item"><h4>Test the Progress-Logging Fix With Real Data</h4><p>With more time, I'd run a quantitative before/after comparison — timing how long it actually takes to log progress in the current app versus the persistent widget.</p></div>
+        <div class="feat-item"><h4>Expand Research Beyond Power Users</h4><p>My interview pool skewed toward frequent readers. I'd want to talk to lapsed or occasional users next, since their drop-off reasons may differ significantly.</p></div>
+      </div>
+    </div></div></div>
 <div style="max-width:1200px;margin:0 auto;padding:0 48px 60px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;border-top:1px solid var(--border);margin-top:20px;padding-top:32px">
   <a href="flight-booking.html" style="font-size:13px;color:var(--ink3)">← Previous · Find Your Perfect Flight</a>
   <a href="dawson-motors.html" style="font-size:13px;color:var(--ink3)">Next · Dawson Motors Redesign →</a>
@@ -375,7 +400,7 @@ footer{background:var(--sand2);border-top:1px solid var(--border)}
     </div>
     <div class="footer-col">
       <h4>Connect</h4>
-      <ul><li><a href="https://linkedin.com/in/courtney-reicherter-0b84b7297/" target="_blank">LinkedIn</a></li></ul>
+      <ul><li><a href="https://linkedin.com/in/courtney-reicherter-0b84b7297/" target="_blank">LinkedIn</a></li><li><a href="assets/Courtney_Reicherter_Resume.pdf" target="_blank">Resume (PDF)</a></li></ul>
     </div>
   </div>
   <div class="footer-bottom">© 2026 Courtney Reicherter. All rights reserved.</div>
